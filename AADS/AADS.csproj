@@ -1,0 +1,415 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{42667CDD-68AA-4999-A034-38B3F6F6F49F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AADS</RootNamespace>
+    <AssemblyName>AADS</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <LangVersion>8.0</LangVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="CoordinateSharp, Version=2.10.1.1, Culture=neutral, PublicKeyToken=f45e02df057b7725, processorArchitecture=MSIL">
+      <HintPath>..\packages\CoordinateSharp.2.10.1.1\lib\net40\CoordinateSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="GMap.NET.Core, Version=2.0.2.0, Culture=neutral, PublicKeyToken=b85b9027b614afef, processorArchitecture=MSIL">
+      <HintPath>..\packages\GMap.NET.Core.2.0.2\lib\net46\GMap.NET.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GMap.NET.WindowsForms, Version=2.0.2.0, Culture=neutral, PublicKeyToken=b85b9027b614afef, processorArchitecture=MSIL">
+      <HintPath>..\packages\GMap.NET.WinForms.2.0.2\lib\net46\GMap.NET.WindowsForms.dll</HintPath>
+    </Reference>
+    <Reference Include="GMap.NET.WindowsPresentation, Version=2.0.2.0, Culture=neutral, PublicKeyToken=b85b9027b614afef, processorArchitecture=MSIL">
+      <HintPath>..\packages\GMap.NET.WinPresentation.2.0.2\lib\net46\GMap.NET.WindowsPresentation.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.15.8.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.15.8\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4, Version=1.2.6.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.1.2.6\lib\net46\K4os.Compression.LZ4.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4.Streams, Version=1.2.6.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.Streams.1.2.6\lib\net46\K4os.Compression.LZ4.Streams.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Hash.xxHash, Version=1.0.6.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Hash.xxHash.1.0.6\lib\net46\K4os.Hash.xxHash.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.23.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.23\lib\net48\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Renci.SshNet, Version=2020.0.1.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106, processorArchitecture=MSIL">
+      <HintPath>..\packages\SSH.NET.2020.0.1\lib\net40\Renci.SshNet.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlClient, Version=4.6.1.2, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SqlClient.4.8.2\lib\net461\System.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite, Version=1.0.113.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.113.3\lib\net46\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.EF6, Version=1.0.113.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.EF6.1.0.113.0\lib\net46\System.Data.SQLite.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq, Version=1.0.113.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.Linq.1.0.113.0\lib\net46\System.Data.SQLite.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal.Windows, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Principal.Windows.5.0.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=5.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.5.0.1\lib\net461\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=5.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.5.0.2\lib\net461\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Ubiety.Dns.Core, Version=2.2.1.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.23\lib\net48\Ubiety.Dns.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Zstandard.Net, Version=1.1.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.23\lib\net48\Zstandard.Net.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CartesianCoordinate.cs" />
+    <Compile Include="GMarker.cs" />
+    <Compile Include="IDataCollection.cs" />
+    <Compile Include="TrackCollection.cs" />
+    <Compile Include="Views\Marker\VitalAssetView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Marker\VitalAssetView.Designer.cs">
+      <DependentUpon>VitalAssetView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Polygon\GeographicCreation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Polygon\GeographicCreation.Designer.cs">
+      <DependentUpon>GeographicCreation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeorefCoordinate.cs" />
+    <Compile Include="GMarkerRadar.cs" />
+    <Compile Include="GMarkerRect.cs" />
+    <Compile Include="GMarkerTrack.cs" />
+    <Compile Include="IDataManager.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MapMode.cs" />
+    <Compile Include="Coordinate.cs" />
+    <Compile Include="PositionConverter.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RadarManager.cs" />
+    <Compile Include="RadarSite.cs" />
+    <Compile Include="ScaleConverter.cs" />
+    <Compile Include="CommandResponse.cs" />
+    <Compile Include="TrackData.cs" />
+    <Compile Include="TrackManager.cs" />
+    <Compile Include="Views\Marker\AirportCreation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Marker\AirportCreation.Designer.cs">
+      <DependentUpon>AirportCreation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Marker\AirportView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Marker\AirportView.Designer.cs">
+      <DependentUpon>AirportView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Marker\CityCreation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Marker\CityCreation.Designer.cs">
+      <DependentUpon>CityCreation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Marker\FireUnitCreation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Marker\FireUnitCreation.Designer.cs">
+      <DependentUpon>FireUnitCreation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Marker\FixedPointCreation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Marker\FixedPointCreation.Designer.cs">
+      <DependentUpon>FixedPointCreation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Marker\LandmarkCreation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Marker\LandmarkCreation.Designer.cs">
+      <DependentUpon>LandmarkCreation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Marker\LandmarkView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Marker\LandmarkView.Designer.cs">
+      <DependentUpon>LandmarkView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ShowCategory\Line.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ShowCategory\Line.Designer.cs">
+      <DependentUpon>Line.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ShowCategory\Marker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ShowCategory\Marker.Designer.cs">
+      <DependentUpon>Marker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ShowCategory\Polygon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ShowCategory\Polygon.Designer.cs">
+      <DependentUpon>Polygon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ShowCategory\TestShowRightCategory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ShowCategory\TestShowRightCategory.Designer.cs">
+      <DependentUpon>TestShowRightCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ShowCategory\Track.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ShowCategory\Track.Designer.cs">
+      <DependentUpon>Track.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Track\TrackCreation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Track\TrackCreation.Designer.cs">
+      <DependentUpon>TrackCreation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Track\main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Track\main.Designer.cs">
+      <DependentUpon>main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Track\TrackView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Track\TrackView.Designer.cs">
+      <DependentUpon>TrackView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlViews.cs" />
+    <Compile Include="Views\Marker\VitalAssetCreation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Marker\VitalAssetCreation.Designer.cs">
+      <DependentUpon>VitalAssetCreation.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Views\Marker\AirportCreation.resx">
+      <DependentUpon>AirportCreation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Marker\AirportView.resx">
+      <DependentUpon>AirportView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Marker\CityCreation.resx">
+      <DependentUpon>CityCreation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Marker\FireUnitCreation.resx">
+      <DependentUpon>FireUnitCreation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Marker\FixedPointCreation.resx">
+      <DependentUpon>FixedPointCreation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Marker\LandmarkCreation.resx">
+      <DependentUpon>LandmarkCreation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Marker\LandmarkView.resx">
+      <DependentUpon>LandmarkView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Marker\VitalAssetView.resx">
+      <DependentUpon>VitalAssetView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Polygon\GeographicCreation.resx">
+      <DependentUpon>GeographicCreation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ShowCategory\Line.resx">
+      <DependentUpon>Line.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ShowCategory\Marker.resx">
+      <DependentUpon>Marker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ShowCategory\Polygon.resx">
+      <DependentUpon>Polygon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ShowCategory\TestShowRightCategory.resx">
+      <DependentUpon>TestShowRightCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ShowCategory\Track.resx">
+      <DependentUpon>Track.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Track\TrackCreation.resx">
+      <DependentUpon>TrackCreation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Track\main.resx">
+      <DependentUpon>main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Track\TrackView.resx">
+      <DependentUpon>TrackView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Marker\VitalAssetCreation.resx">
+      <DependentUpon>VitalAssetCreation.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\icons8-plus-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\icons8-checked-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\icons8-lock-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\icons8-macos-minimize-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\icons8-refresh-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\icons8-speech-bubble-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\icons8-uncheck-all-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\icons8-cancel-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\icons8-macos-close-90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\icons8-macos-maximize-90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\icons8-macos-minimize-90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\45cf3151e954736717470cc74e34b7a0-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.113.3\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.113.3\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.113.3\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets" Condition="Exists('..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.113.3\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" />
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+</Project>

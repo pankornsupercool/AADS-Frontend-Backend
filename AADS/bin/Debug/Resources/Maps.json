@@ -1,0 +1,16 @@
+[
+  {
+    "Name": "Map",
+    "Type": "GoogleMap",
+	"MainMap": {
+	  "Default": 8,
+	  "MinZoom": 5,
+	  "MaxZoom": 15
+	},
+	"MiniMap": {
+	  "Default": 4,
+	  "MinZoom": 1,
+	  "MaxZoom": 15
+	}
+  }
+]

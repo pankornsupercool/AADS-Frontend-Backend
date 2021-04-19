@@ -1,0 +1,9 @@
+/.vs/
+/AADS/bin/Debug/*
+/AADS/bin/Release/*
+/AADS/obj/Debug/*
+/AADS/obj/Release/*
+!/AADS/bin/Debug/Resources
+/AADS/bin/Debug/Resources/*
+!/AADS/bin/Debug/Images
+!/AADS/bin/Debug/Resources/Maps.json
