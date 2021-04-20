@@ -231,6 +231,7 @@ namespace AADS.Views.Marker
             this.btnAddMarker.TabIndex = 125;
             this.btnAddMarker.Text = "สร้าง";
             this.btnAddMarker.UseVisualStyleBackColor = true;
+            this.btnAddMarker.Click += new System.EventHandler(this.btnAddMarker_Click);
             // 
             // FixedPointCreation
             // 

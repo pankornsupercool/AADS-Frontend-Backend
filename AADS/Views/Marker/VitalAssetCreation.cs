@@ -56,6 +56,14 @@ namespace AADS.Views.Marker
                 // TODO : Manage data before adding to overlay
                 main.markerOverlay.Markers.Add(marker);
                 main.markerOverlay.Markers.Add(rect);
+
+                // Marker detail
+                List<object> Detail = new List<object>();
+                Detail.Add("Airport");
+                Detail.Add("Detail");
+                Detail.Add("latLng");
+                // *** Remove comment -> add marker to dictionary ***
+                //main.detailMarkers.Add(GMarker, Detail);
             }
         }
     }
