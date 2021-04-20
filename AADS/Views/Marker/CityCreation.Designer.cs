@@ -97,6 +97,7 @@ namespace AADS.Views.Marker
             this.btnAddMarker.TabIndex = 85;
             this.btnAddMarker.Text = "สร้าง";
             this.btnAddMarker.UseVisualStyleBackColor = true;
+            this.btnAddMarker.Click += new System.EventHandler(this.btnAddMarker_Click);
             // 
             // txtLabel
             // 

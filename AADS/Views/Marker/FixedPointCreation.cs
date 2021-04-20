@@ -30,5 +30,16 @@ namespace AADS.Views.Marker
         {
 
         }
+
+        private void btnAddMarker_Click(object sender, EventArgs e)
+        {
+            // Marker detail
+            List<object> Detail = new List<object>();
+            Detail.Add("Airport");
+            Detail.Add("Detail");
+            Detail.Add("latLng");
+            // *** Remove comment -> add marker to dictionary ***
+            //main.detailMarkers.Add(GMarker, Detail);
+        }
     }
 }

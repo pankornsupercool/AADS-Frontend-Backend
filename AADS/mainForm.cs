@@ -30,6 +30,8 @@ namespace AADS
 
         internal readonly GMapOverlay minMapOverlay = new GMapOverlay("minMapOverlay");
 
+        // marker detail key = marker, value = marker detail
+        public Dictionary<GMarker, List<object>> detailMarkers = new Dictionary<GMarker, List<object>>();
         private Dictionary<string, GMarkerRect> radarMarkers = new Dictionary<string, GMarkerRect>();
         private Dictionary<string, GMarkerRect> trackMarkers = new Dictionary<string, GMarkerRect>();
 

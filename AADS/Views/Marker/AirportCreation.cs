@@ -11,6 +11,16 @@ using System.Windows.Forms;
 
 namespace AADS.Views.Marker
 {
+    /*public struct AirportDetail
+    {
+        public string Name;
+        public string Detail;
+        public AirportDetail(string name, string detail)
+        {
+            Name = name;
+            Detail = detail;
+        }
+    }*/
     public partial class AirportCreation : UserControl
     {
         private MainForm main = MainForm.GetInstance();
@@ -27,6 +37,17 @@ namespace AADS.Views.Marker
         {
             PointLatLng point = ControlViews.Main.gMap.FromLocalToLatLng(e.X, e.Y);
             txtPosition.Text = PositionConverter.ParsePointToString(point, cmbPosition.Text);
+        }
+
+        private void btnAddMarker_Click(object sender, EventArgs e)
+        {
+            // Marker detail
+            List<object> Detail = new List<object>();
+            Detail.Add("Airport");
+            Detail.Add("Detail");
+            Detail.Add("latLng");
+            // *** Remove comment -> add marker to dictionary ***
+            //main.detailMarkers.Add(GMarker, Detail);
         }
     }
 }

@@ -26,5 +26,16 @@ namespace AADS.Views.Marker
             PointLatLng point = ControlViews.Main.gMap.FromLocalToLatLng(e.X, e.Y);
             txtPosition.Text = PositionConverter.ParsePointToString(point, cmbPosition.Text);
         }
+
+        private void btnAddMarker_Click(object sender, EventArgs e)
+        {
+            // Marker detail
+            List<object> Detail = new List<object>();
+            Detail.Add("Airport");
+            Detail.Add("Detail");
+            Detail.Add("latLng");
+            // *** Remove comment -> add marker to dictionary ***
+            //main.detailMarkers.Add(GMarker, Detail);
+        }
     }
 }
