@@ -13,13 +13,20 @@ namespace AADS.Views.Marker
 {
     public partial class AirportCreation : UserControl
     {
+        private MainForm main = MainForm.GetInstance();
         public AirportCreation()
         {
             InitializeComponent();
+            cmbPosition.SelectedIndex = 0;
         }
         private void AirportCreation_Load(object sender, EventArgs e)
         {
+        }
 
+        internal void GMap_MouseClick(object sender, MouseEventArgs e)
+        {
+            PointLatLng point = ControlViews.Main.gMap.FromLocalToLatLng(e.X, e.Y);
+            txtPosition.Text = PositionConverter.ParsePointToString(point, cmbPosition.Text);
         }
     }
 }

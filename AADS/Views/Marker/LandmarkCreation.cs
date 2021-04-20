@@ -14,9 +14,17 @@ namespace AADS.Views.Marker
 {
     public partial class LandmarkCreation : UserControl
     {
+        private MainForm main = MainForm.GetInstance();
         public LandmarkCreation()
         {
             InitializeComponent();
+            cmbPosition.SelectedIndex = 0;
+        }
+
+        internal void GMap_MouseClick(object sender, MouseEventArgs e)
+        {
+            PointLatLng point = ControlViews.Main.gMap.FromLocalToLatLng(e.X, e.Y);
+            txtPosition.Text = PositionConverter.ParsePointToString(point, cmbPosition.Text);
         }
     }
 }

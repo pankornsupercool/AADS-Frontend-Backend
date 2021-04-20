@@ -29,200 +29,198 @@ namespace AADS.Views.Marker
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnEdit = new System.Windows.Forms.Button();
-            this.btnDelete = new System.Windows.Forms.Button();
-            this.txtDetail = new System.Windows.Forms.TextBox();
-            this.detailLabel = new System.Windows.Forms.Label();
-            this.btnSubmit = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.txtBatteryID = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtNumber = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtType = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.txtLocation = new System.Windows.Forms.TextBox();
-            this.cbbType = new System.Windows.Forms.ComboBox();
-            this.cbbNumber = new System.Windows.Forms.ComboBox();
-            this.cbbBatteryId = new System.Windows.Forms.ComboBox();
-            this.rdoNonOp = new System.Windows.Forms.RadioButton();
-            this.rdoLimited = new System.Windows.Forms.RadioButton();
-            this.rdoOp = new System.Windows.Forms.RadioButton();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtDetail = new System.Windows.Forms.TextBox();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.label11 = new System.Windows.Forms.Label();
+            this.cmbPosition = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
-            // btnEdit
+            // txtBatteryID
             // 
-            this.btnEdit.Enabled = false;
-            this.btnEdit.Location = new System.Drawing.Point(133, 462);
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(170, 33);
-            this.btnEdit.TabIndex = 33;
-            this.btnEdit.Text = "Edit";
-            this.btnEdit.UseVisualStyleBackColor = true;
+            this.txtBatteryID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBatteryID.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtBatteryID.Location = new System.Drawing.Point(88, 27);
+            this.txtBatteryID.Name = "txtBatteryID";
+            this.txtBatteryID.Size = new System.Drawing.Size(252, 22);
+            this.txtBatteryID.TabIndex = 32;
             // 
-            // btnDelete
+            // label6
             // 
-            this.btnDelete.Enabled = false;
-            this.btnDelete.Location = new System.Drawing.Point(133, 423);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(170, 33);
-            this.btnDelete.TabIndex = 32;
-            this.btnDelete.Text = "Delete";
-            this.btnDelete.UseVisualStyleBackColor = true;
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(3, 30);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(79, 16);
+            this.label6.TabIndex = 101;
+            this.label6.Text = "กองร้อยอาวุธยิง";
             // 
-            // txtDetail
+            // label7
             // 
-            this.txtDetail.Location = new System.Drawing.Point(133, 295);
-            this.txtDetail.Name = "txtDetail";
-            this.txtDetail.Size = new System.Drawing.Size(176, 20);
-            this.txtDetail.TabIndex = 31;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(32, 81);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(50, 16);
+            this.label7.TabIndex = 103;
+            this.label7.Text = "หมายเลข";
             // 
-            // detailLabel
+            // txtNumber
             // 
-            this.detailLabel.AutoSize = true;
-            this.detailLabel.Location = new System.Drawing.Point(58, 298);
-            this.detailLabel.Name = "detailLabel";
-            this.detailLabel.Size = new System.Drawing.Size(34, 13);
-            this.detailLabel.TabIndex = 30;
-            this.detailLabel.Text = "Detail";
+            this.txtNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNumber.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtNumber.Location = new System.Drawing.Point(88, 75);
+            this.txtNumber.Name = "txtNumber";
+            this.txtNumber.Size = new System.Drawing.Size(252, 22);
+            this.txtNumber.TabIndex = 102;
             // 
-            // btnSubmit
+            // label8
             // 
-            this.btnSubmit.Location = new System.Drawing.Point(133, 384);
-            this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(170, 33);
-            this.btnSubmit.TabIndex = 29;
-            this.btnSubmit.Text = "Submit";
-            this.btnSubmit.UseVisualStyleBackColor = true;
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(37, 124);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(45, 16);
+            this.label8.TabIndex = 105;
+            this.label8.Text = "ประเภท";
             // 
-            // label5
+            // txtType
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(58, 330);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(37, 13);
-            this.label5.TabIndex = 28;
-            this.label5.Text = "Status";
+            this.txtType.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtType.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtType.Location = new System.Drawing.Point(88, 121);
+            this.txtType.Name = "txtType";
+            this.txtType.Size = new System.Drawing.Size(252, 22);
+            this.txtType.TabIndex = 104;
             // 
-            // label4
+            // label9
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(58, 260);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(48, 13);
-            this.label4.TabIndex = 27;
-            this.label4.Text = "Location";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(62, 219);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(31, 13);
-            this.label3.TabIndex = 26;
-            this.label3.Text = "Type";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(62, 169);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 13);
-            this.label2.TabIndex = 25;
-            this.label2.Text = "Number";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(62, 124);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(54, 13);
-            this.label1.TabIndex = 24;
-            this.label1.Text = "Battery ID";
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(35, 175);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(47, 16);
+            this.label9.TabIndex = 107;
+            this.label9.Text = "ตำแหน่ง";
             // 
             // txtLocation
             // 
-            this.txtLocation.Location = new System.Drawing.Point(133, 257);
+            this.txtLocation.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLocation.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtLocation.Location = new System.Drawing.Point(88, 175);
             this.txtLocation.Name = "txtLocation";
-            this.txtLocation.Size = new System.Drawing.Size(176, 20);
-            this.txtLocation.TabIndex = 23;
+            this.txtLocation.Size = new System.Drawing.Size(150, 22);
+            this.txtLocation.TabIndex = 106;
             // 
-            // cbbType
+            // label10
             // 
-            this.cbbType.FormattingEnabled = true;
-            this.cbbType.Location = new System.Drawing.Point(133, 216);
-            this.cbbType.Name = "cbbType";
-            this.cbbType.Size = new System.Drawing.Size(121, 21);
-            this.cbbType.TabIndex = 22;
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(23, 228);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(59, 16);
+            this.label10.TabIndex = 109;
+            this.label10.Text = "รายละเอียด";
             // 
-            // cbbNumber
+            // txtDetail
             // 
-            this.cbbNumber.FormattingEnabled = true;
-            this.cbbNumber.Location = new System.Drawing.Point(133, 166);
-            this.cbbNumber.Name = "cbbNumber";
-            this.cbbNumber.Size = new System.Drawing.Size(121, 21);
-            this.cbbNumber.TabIndex = 21;
+            this.txtDetail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDetail.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtDetail.Location = new System.Drawing.Point(88, 225);
+            this.txtDetail.Name = "txtDetail";
+            this.txtDetail.Size = new System.Drawing.Size(252, 22);
+            this.txtDetail.TabIndex = 108;
             // 
-            // cbbBatteryId
+            // radioButton1
             // 
-            this.cbbBatteryId.FormattingEnabled = true;
-            this.cbbBatteryId.Location = new System.Drawing.Point(133, 121);
-            this.cbbBatteryId.Name = "cbbBatteryId";
-            this.cbbBatteryId.Size = new System.Drawing.Size(121, 21);
-            this.cbbBatteryId.TabIndex = 20;
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(238, 278);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(60, 17);
+            this.radioButton1.TabIndex = 112;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "NonOP";
+            this.radioButton1.UseVisualStyleBackColor = true;
             // 
-            // rdoNonOp
+            // radioButton2
             // 
-            this.rdoNonOp.AutoSize = true;
-            this.rdoNonOp.Location = new System.Drawing.Point(243, 328);
-            this.rdoNonOp.Name = "rdoNonOp";
-            this.rdoNonOp.Size = new System.Drawing.Size(60, 17);
-            this.rdoNonOp.TabIndex = 19;
-            this.rdoNonOp.TabStop = true;
-            this.rdoNonOp.Text = "NonOP";
-            this.rdoNonOp.UseVisualStyleBackColor = true;
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(156, 278);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(58, 17);
+            this.radioButton2.TabIndex = 111;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Limited";
+            this.radioButton2.UseVisualStyleBackColor = true;
             // 
-            // rdoLimited
+            // radioButton3
             // 
-            this.rdoLimited.AutoSize = true;
-            this.rdoLimited.Location = new System.Drawing.Point(179, 328);
-            this.rdoLimited.Name = "rdoLimited";
-            this.rdoLimited.Size = new System.Drawing.Size(58, 17);
-            this.rdoLimited.TabIndex = 18;
-            this.rdoLimited.TabStop = true;
-            this.rdoLimited.Text = "Limited";
-            this.rdoLimited.UseVisualStyleBackColor = true;
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Location = new System.Drawing.Point(99, 278);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(40, 17);
+            this.radioButton3.TabIndex = 110;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "OP";
+            this.radioButton3.UseVisualStyleBackColor = true;
             // 
-            // rdoOp
+            // label11
             // 
-            this.rdoOp.AutoSize = true;
-            this.rdoOp.Location = new System.Drawing.Point(133, 328);
-            this.rdoOp.Name = "rdoOp";
-            this.rdoOp.Size = new System.Drawing.Size(40, 17);
-            this.rdoOp.TabIndex = 17;
-            this.rdoOp.TabStop = true;
-            this.rdoOp.Text = "OP";
-            this.rdoOp.UseVisualStyleBackColor = true;
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(43, 278);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(39, 16);
+            this.label11.TabIndex = 113;
+            this.label11.Text = "สถานะ";
+            // 
+            // cmbPosition
+            // 
+            this.cmbPosition.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbPosition.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbPosition.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.cmbPosition.FormattingEnabled = true;
+            this.cmbPosition.Items.AddRange(new object[] {
+            "Decimal Degree",
+            "Degree Decimal Minutes",
+            "Degree Minute Seconds",
+            "UTM",
+            "MGRS",
+            "GEOREF"});
+            this.cmbPosition.Location = new System.Drawing.Point(242, 175);
+            this.cmbPosition.Name = "cmbPosition";
+            this.cmbPosition.Size = new System.Drawing.Size(98, 24);
+            this.cmbPosition.TabIndex = 114;
             // 
             // FireUnitCreation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.btnEdit);
-            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.cmbPosition);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.radioButton2);
+            this.Controls.Add(this.radioButton3);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.txtDetail);
-            this.Controls.Add(this.detailLabel);
-            this.Controls.Add(this.btnSubmit);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.txtLocation);
-            this.Controls.Add(this.cbbType);
-            this.Controls.Add(this.cbbNumber);
-            this.Controls.Add(this.cbbBatteryId);
-            this.Controls.Add(this.rdoNonOp);
-            this.Controls.Add(this.rdoLimited);
-            this.Controls.Add(this.rdoOp);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.txtType);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.txtNumber);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.txtBatteryID);
             this.Name = "FireUnitCreation";
             this.Size = new System.Drawing.Size(366, 617);
             this.ResumeLayout(false);
@@ -231,23 +229,20 @@ namespace AADS.Views.Marker
         }
 
         #endregion
-
-        public System.Windows.Forms.Button btnEdit;
-        public System.Windows.Forms.Button btnDelete;
-        private System.Windows.Forms.TextBox txtDetail;
-        private System.Windows.Forms.Label detailLabel;
-        private System.Windows.Forms.Button btnSubmit;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtBatteryID;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtNumber;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txtType;
+        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtLocation;
-        private System.Windows.Forms.ComboBox cbbType;
-        private System.Windows.Forms.ComboBox cbbNumber;
-        private System.Windows.Forms.ComboBox cbbBatteryId;
-        private System.Windows.Forms.RadioButton rdoNonOp;
-        private System.Windows.Forms.RadioButton rdoLimited;
-        private System.Windows.Forms.RadioButton rdoOp;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox txtDetail;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.ComboBox cmbPosition;
     }
 }

@@ -112,6 +112,11 @@ namespace AADS
         {
             // Marker
             Main.gMap.MouseClick += vitalAssetCreation.GMap_MouseClick;
+            Main.gMap.MouseClick += cityCreation.GMap_MouseClick;
+            Main.gMap.MouseClick += fireUnitCreation.GMap_MouseClick;
+            Main.gMap.MouseClick += fixedPointCreation.GMap_MouseClick;
+            Main.gMap.MouseClick += landmarkCreation.GMap_MouseClick;
+            Main.gMap.MouseClick += airportCreation.GMap_MouseClick;
             // Track
             Main.gMap.MouseClick += trackCreation.GMap_MouseClick;
         }

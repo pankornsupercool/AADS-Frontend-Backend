@@ -13,13 +13,23 @@ namespace AADS.Views.Marker
 {
     public partial class CityCreation : UserControl
     {
+        private MainForm main = MainForm.GetInstance();
         public CityCreation()
         {
             InitializeComponent();
+            cmbPosition.SelectedIndex = 0;
         }
+
+
         private void CityCreation_Load(object sender, EventArgs e)
         {
+            // Load City Interface
+        }
 
+        internal void GMap_MouseClick(object sender, MouseEventArgs e)
+        {
+            PointLatLng point = ControlViews.Main.gMap.FromLocalToLatLng(e.X, e.Y);
+            txtPosition.Text = PositionConverter.ParsePointToString(point, cmbPosition.Text);
         }
     }
 }

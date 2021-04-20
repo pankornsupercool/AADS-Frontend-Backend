@@ -17,13 +17,17 @@ namespace AADS.Views.ShowCategory
             InitializeComponent();
             
         }
+
+
         public UserControl currentControl;
+
         public void SetControl(UserControl control)
         {
             currentControl = control;
             panelShowDetail.Controls.Clear();
             panelShowDetail.Controls.Add(currentControl);
         }
+
         private void btnShowAiport_Click(object sender, EventArgs e)
         {
             SetControl(ControlViews.AirportCreation);

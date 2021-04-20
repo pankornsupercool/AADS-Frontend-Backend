@@ -388,6 +388,12 @@ namespace AADS
             isRightClick = e.Button == MouseButtons.Right;
         }
 
+        void moveCurrentMarker(PointLatLng point)
+        {
+
+            currentMarker.Position = point;
+            //MessageBox.Show(currentMarker.Position.ToString());
+        }
         void mainMap_MouseMove(object sender, MouseEventArgs e)
         {
             PointLatLng pnew = mainMap.FromLocalToLatLng(e.X, e.Y);
@@ -397,10 +403,8 @@ namespace AADS
                 moveCurrentMarker(pnew);
             }
         }
-        void moveCurrentMarker(PointLatLng point)
-        {
-            currentMarker.Position = point;
-        }
+
+
         void mainMap_MouseClick(object sender, MouseEventArgs e)
         {
             PointLatLng pnew = mainMap.FromLocalToLatLng(e.X, e.Y);
