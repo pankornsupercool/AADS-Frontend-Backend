@@ -407,11 +407,11 @@ namespace AADS
             this.time_label.AutoSize = true;
             this.time_label.Dock = System.Windows.Forms.DockStyle.Right;
             this.time_label.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F);
-            this.time_label.Location = new System.Drawing.Point(194, 22);
+            this.time_label.Location = new System.Drawing.Point(201, 22);
             this.time_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.time_label.Name = "time_label";
             this.time_label.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.time_label.Size = new System.Drawing.Size(35, 32);
+            this.time_label.Size = new System.Drawing.Size(28, 25);
             this.time_label.TabIndex = 5;
             this.time_label.Text = "....";
             // 
@@ -424,7 +424,7 @@ namespace AADS
             this.dateLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.dateLabel.Name = "dateLabel";
             this.dateLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.dateLabel.Size = new System.Drawing.Size(35, 32);
+            this.dateLabel.Size = new System.Drawing.Size(28, 25);
             this.dateLabel.TabIndex = 6;
             this.dateLabel.Text = "....";
             // 
@@ -480,7 +480,7 @@ namespace AADS
             this.textBox1.Location = new System.Drawing.Point(23, 0);
             this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(210, 23);
+            this.textBox1.Size = new System.Drawing.Size(210, 20);
             this.textBox1.TabIndex = 1;
             // 
             // panel6
@@ -553,7 +553,7 @@ namespace AADS
             this.cmbMenu.Location = new System.Drawing.Point(46, 1);
             this.cmbMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 4);
             this.cmbMenu.Name = "cmbMenu";
-            this.cmbMenu.Size = new System.Drawing.Size(301, 25);
+            this.cmbMenu.Size = new System.Drawing.Size(301, 21);
             this.cmbMenu.Sorted = true;
             this.cmbMenu.TabIndex = 0;
             this.cmbMenu.SelectedIndexChanged += new System.EventHandler(this.cmbMenu_SelectedIndexChanged);
@@ -719,7 +719,7 @@ namespace AADS
             this.labelCurrentAction.Location = new System.Drawing.Point(22, 576);
             this.labelCurrentAction.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelCurrentAction.Name = "labelCurrentAction";
-            this.labelCurrentAction.Size = new System.Drawing.Size(84, 17);
+            this.labelCurrentAction.Size = new System.Drawing.Size(64, 13);
             this.labelCurrentAction.TabIndex = 5;
             this.labelCurrentAction.Text = "Action: Free";
             // 
@@ -843,10 +843,10 @@ namespace AADS
             this.checkBox1.Appearance = System.Windows.Forms.Appearance.Button;
             this.checkBox1.AutoSize = true;
             this.checkBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.checkBox1.Location = new System.Drawing.Point(31, 28);
+            this.checkBox1.Location = new System.Drawing.Point(36, 28);
             this.checkBox1.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(52, 25);
+            this.checkBox1.Size = new System.Drawing.Size(42, 25);
             this.checkBox1.TabIndex = 1;
             this.checkBox1.Text = "    ";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -962,7 +962,7 @@ namespace AADS
             this.label7.Location = new System.Drawing.Point(2, 27);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(118, 28);
+            this.label7.Size = new System.Drawing.Size(93, 28);
             this.label7.TabIndex = 1;
             this.label7.Text = "ON";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -975,7 +975,7 @@ namespace AADS
             this.label8.Location = new System.Drawing.Point(2, 0);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(118, 27);
+            this.label8.Size = new System.Drawing.Size(93, 27);
             this.label8.TabIndex = 0;
             this.label8.Text = "OP Status";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1005,7 +1005,7 @@ namespace AADS
             this.label9.Location = new System.Drawing.Point(2, 27);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(104, 28);
+            this.label9.Size = new System.Drawing.Size(87, 28);
             this.label9.TabIndex = 1;
             this.label9.Text = "ON";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1018,7 +1018,7 @@ namespace AADS
             this.label10.Location = new System.Drawing.Point(2, 0);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(104, 27);
+            this.label10.Size = new System.Drawing.Size(87, 27);
             this.label10.TabIndex = 0;
             this.label10.Text = "WS Role";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1048,7 +1048,7 @@ namespace AADS
             this.label11.Location = new System.Drawing.Point(2, 27);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(110, 28);
+            this.label11.Size = new System.Drawing.Size(87, 28);
             this.label11.TabIndex = 1;
             this.label11.Text = "ON";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1061,7 +1061,7 @@ namespace AADS
             this.label12.Location = new System.Drawing.Point(2, 0);
             this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(110, 27);
+            this.label12.Size = new System.Drawing.Size(87, 27);
             this.label12.TabIndex = 0;
             this.label12.Text = "CS - Link";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1193,7 +1193,7 @@ namespace AADS
             this.label15.Location = new System.Drawing.Point(2, 27);
             this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(152, 28);
+            this.label15.Size = new System.Drawing.Size(131, 28);
             this.label15.TabIndex = 1;
             this.label15.Text = "ON";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1206,7 +1206,7 @@ namespace AADS
             this.label16.Location = new System.Drawing.Point(2, 0);
             this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(152, 27);
+            this.label16.Size = new System.Drawing.Size(131, 27);
             this.label16.TabIndex = 0;
             this.label16.Text = "Coord (UTM)";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1232,7 +1232,7 @@ namespace AADS
             this.chbHitbox.AutoSize = true;
             this.chbHitbox.Location = new System.Drawing.Point(152, 496);
             this.chbHitbox.Name = "chbHitbox";
-            this.chbHitbox.Size = new System.Drawing.Size(117, 21);
+            this.chbHitbox.Size = new System.Drawing.Size(92, 17);
             this.chbHitbox.TabIndex = 14;
             this.chbHitbox.Text = "Enable Hitbox";
             this.chbHitbox.UseVisualStyleBackColor = true;
@@ -1245,7 +1245,7 @@ namespace AADS
             this.cmbMapMode.Location = new System.Drawing.Point(11, 492);
             this.cmbMapMode.Margin = new System.Windows.Forms.Padding(2);
             this.cmbMapMode.Name = "cmbMapMode";
-            this.cmbMapMode.Size = new System.Drawing.Size(128, 25);
+            this.cmbMapMode.Size = new System.Drawing.Size(128, 21);
             this.cmbMapMode.TabIndex = 9;
             this.cmbMapMode.SelectedIndexChanged += new System.EventHandler(this.cmbMapMode_SelectedIndexChanged);
             // 
@@ -1518,7 +1518,7 @@ namespace AADS
             this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.label27.Location = new System.Drawing.Point(1243, 91);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(58, 29);
+            this.label27.Size = new System.Drawing.Size(48, 25);
             this.label27.TabIndex = 13;
             this.label27.Text = "<<<";
             this.label27.Click += new System.EventHandler(this.label27_Click);
@@ -1578,7 +1578,7 @@ namespace AADS
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(1291, 667);
