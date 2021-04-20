@@ -35,6 +35,7 @@ namespace AADS.Views.Track
             {
                 foreach (Control control in Controls)
                 {
+
                     control.Visible = true;
                 }
                 lbNumber.Text = track.Number.ToString("000");

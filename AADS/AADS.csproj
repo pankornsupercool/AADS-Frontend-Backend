@@ -151,7 +151,14 @@
     <Compile Include="CartesianCoordinate.cs" />
     <Compile Include="GMarker.cs" />
     <Compile Include="IDataCollection.cs" />
+    <Compile Include="Models\CityData.cs" />
     <Compile Include="TrackCollection.cs" />
+    <Compile Include="Views\Marker\CityView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Marker\CityView.Designer.cs">
+      <DependentUpon>CityView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Marker\VitalAssetView.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -184,7 +191,7 @@
     <Compile Include="RadarSite.cs" />
     <Compile Include="ScaleConverter.cs" />
     <Compile Include="CommandResponse.cs" />
-    <Compile Include="TrackData.cs" />
+    <Compile Include="Models\TrackData.cs" />
     <Compile Include="TrackManager.cs" />
     <Compile Include="Views\Marker\AirportCreation.cs">
       <SubType>UserControl</SubType>
@@ -304,6 +311,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Marker\CityCreation.resx">
       <DependentUpon>CityCreation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Marker\CityView.resx">
+      <DependentUpon>CityView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Marker\FireUnitCreation.resx">
       <DependentUpon>FireUnitCreation.cs</DependentUpon>

@@ -134,6 +134,7 @@ namespace AADS.Views.Track
         }
         private void btnCreate_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Create");
             PointLatLng point = PositionConverter.ParsePointFromString(txtPosition.Text);
             int number;
             double speed, bearing, height;
@@ -143,11 +144,11 @@ namespace AADS.Views.Track
             }
             else if (!int.TryParse(txtNumber.Text, out number))
             {
-
+                MessageBox.Show("Pass number");
             }
             else if (!double.TryParse(txtSpeed.Text, out speed))
             {
-
+                MessageBox.Show("Pass speed");
             }
             else if (!double.TryParse(txtBearing.Text, out bearing))
             {
@@ -171,6 +172,7 @@ namespace AADS.Views.Track
                 };
                 if (editMode)
                 {
+                    MessageBox.Show("Pass");
                     if (this.track != null)
                     {
                         track.Faker = this.track.Faker;

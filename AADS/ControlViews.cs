@@ -18,6 +18,7 @@ namespace AADS
         private Views.Marker.AirportCreation airportCreation = new Views.Marker.AirportCreation();
         private Views.Marker.AirportView airportView = new Views.Marker.AirportView();
         private Views.Marker.CityCreation cityCreation = new Views.Marker.CityCreation();
+        private Views.Marker.CityView cityView = new Views.Marker.CityView();
         private Views.Marker.FireUnitCreation fireUnitCreation = new Views.Marker.FireUnitCreation();
         private Views.Marker.LandmarkCreation landmarkCreation = new Views.Marker.LandmarkCreation();
         private Views.Marker.LandmarkView landmarkView = new Views.Marker.LandmarkView();
@@ -27,6 +28,7 @@ namespace AADS
         // Polygon
         private Views.Polygon.GeographicCreation geographicCreation = new Views.Polygon.GeographicCreation();
         // Track
+
         private Views.Track.TrackCreation trackCreation = new Views.Track.TrackCreation();
         private Views.Track.TrackView trackView = new Views.Track.TrackView();
         private static ControlViews _Instance;
@@ -69,6 +71,10 @@ namespace AADS
         public static Views.Marker.CityCreation CityCreation
         {
             get => Instance.cityCreation;
+        }
+        public static Views.Marker.CityView CityView
+        {
+            get => Instance.cityView;
         }
         public static Views.Marker.FireUnitCreation FireUnitCreation
         {

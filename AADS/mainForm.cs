@@ -350,6 +350,7 @@ namespace AADS
                 {
                     if (!hasPanelRight)
                     {
+                        MessageBox.Show("Pass");
                         panelRight_Map();
                         panelRightShowControl(ControlViews.Track);
                         ControlViews.Track.SetControl(ControlViews.TrackView);
@@ -358,6 +359,7 @@ namespace AADS
                     }
                     else if (ControlViews.Main.currentControl == ControlViews.Track)
                     {
+                        MessageBox.Show("Pass 2");
                         ControlViews.Track.SetControl(ControlViews.TrackView);
                         ControlViews.TrackView.setTrackInfo(track.Track);
                     }
@@ -366,7 +368,8 @@ namespace AADS
                 {
                     // TODO : Request right panel and show this marker data
                     // See above else if condition for example
-                    MessageBox.Show("Name: " + marker.Name);
+                    MessageBox.Show("Name: " + marker.Name + " This One");
+                    ControlViews.Marker.SetControl(ControlViews.VitalAssetView);
                 }
             }
         }
