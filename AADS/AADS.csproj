@@ -152,12 +152,6 @@
     <Compile Include="GMarker.cs" />
     <Compile Include="IDataCollection.cs" />
     <Compile Include="TrackCollection.cs" />
-    <Compile Include="Views\MarkerOption\Airport.cs" />
-    <Compile Include="Views\MarkerOption\City.cs" />
-    <Compile Include="Views\MarkerOption\FireUnit.cs" />
-    <Compile Include="Views\MarkerOption\FixedPoint.cs" />
-    <Compile Include="Views\MarkerOption\Landmark.cs" />
-    <Compile Include="Views\MarkerOption\VitalAsset.cs" />
     <Compile Include="Views\Marker\VitalAssetView.cs">
       <SubType>UserControl</SubType>
     </Compile>
